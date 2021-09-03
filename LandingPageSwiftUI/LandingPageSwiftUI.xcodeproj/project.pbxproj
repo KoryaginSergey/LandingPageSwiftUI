@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6364242026E25F5800406279 /* LandingPageSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */; };
-		6364242226E25F5800406279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364242126E25F5800406279 /* ContentView.swift */; };
+		6364242226E25F5800406279 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364242126E25F5800406279 /* LoginView.swift */; };
 		6364242426E25F5A00406279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364242326E25F5A00406279 /* Assets.xcassets */; };
 		6364242726E25F5A00406279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364242626E25F5A00406279 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		6364241C26E25F5800406279 /* LandingPageSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandingPageSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageSwiftUIApp.swift; sourceTree = "<group>"; };
-		6364242126E25F5800406279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6364242126E25F5800406279 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6364242326E25F5A00406279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6364242626E25F5A00406279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6364242826E25F5A00406279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */,
-				6364242126E25F5800406279 /* ContentView.swift */,
+				6364242126E25F5800406279 /* LoginView.swift */,
 				6364242326E25F5A00406279 /* Assets.xcassets */,
 				6364242826E25F5A00406279 /* Info.plist */,
 				6364242526E25F5A00406279 /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6364242226E25F5800406279 /* ContentView.swift in Sources */,
+				6364242226E25F5800406279 /* LoginView.swift in Sources */,
 				6364242026E25F5800406279 /* LandingPageSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
