@@ -11,15 +11,19 @@
 		6364242226E25F5800406279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364242126E25F5800406279 /* ContentView.swift */; };
 		6364242426E25F5A00406279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364242326E25F5A00406279 /* Assets.xcassets */; };
 		6364242726E25F5A00406279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364242626E25F5A00406279 /* Preview Assets.xcassets */; };
+		843D4B0026E4B08B006ECDBA /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D4AFF26E4B08B006ECDBA /* CircleImage.swift */; };
+		843D4B0426E4B737006ECDBA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D4B0326E4B737006ECDBA /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6364241C26E25F5800406279 /* LandingPageSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandingPageSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageSwiftUIApp.swift; sourceTree = "<group>"; };
-		6364242126E25F5800406279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6364242126E25F5800406279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		6364242326E25F5A00406279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6364242626E25F5A00406279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6364242826E25F5A00406279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843D4AFF26E4B08B006ECDBA /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		843D4B0326E4B737006ECDBA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */,
+				843D4AFF26E4B08B006ECDBA /* CircleImage.swift */,
 				6364242126E25F5800406279 /* ContentView.swift */,
+				843D4B0326E4B737006ECDBA /* MapView.swift */,
 				6364242326E25F5A00406279 /* Assets.xcassets */,
 				6364242826E25F5A00406279 /* Info.plist */,
 				6364242526E25F5A00406279 /* Preview Content */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6364242226E25F5800406279 /* ContentView.swift in Sources */,
+				843D4B0426E4B737006ECDBA /* MapView.swift in Sources */,
 				6364242026E25F5800406279 /* LandingPageSwiftUIApp.swift in Sources */,
+				843D4B0026E4B08B006ECDBA /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
