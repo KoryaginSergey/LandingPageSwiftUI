@@ -21,7 +21,7 @@ struct SignInPage: View {
             .font(.largeTitle)
             .fontWeight(.black)
         }
-        .padding(.all)
+        Spacer()
        
         Text("Let's get started.")
           .font(.largeTitle)
@@ -34,7 +34,6 @@ struct SignInPage: View {
           .lineLimit(2)
           .padding(.all)
           
-        
         TextInputPage()
         TextInputPage()
         
@@ -42,10 +41,10 @@ struct SignInPage: View {
           HStack {
             Spacer()
             Button("Forgot your password?") {
-            }
+            }.padding(.trailing, 20)
           }
           
-//          Spacer()
+          Spacer()
           
           Button("Sign in") {
             
