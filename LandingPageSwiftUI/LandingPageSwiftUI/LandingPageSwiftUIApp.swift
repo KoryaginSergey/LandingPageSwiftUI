@@ -12,6 +12,7 @@ struct LandingPageSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
           SignInPage()
+//          ForgotPasswordPage()
         }
     }
 }
