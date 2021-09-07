@@ -15,7 +15,7 @@ struct SignInPage: View {
           Image("piano2")
             .resizable()
             .frame(width: 50, height: 50)
-            .padding(.init(top: 0, leading: 0, bottom: 5, trailing: 0))
+            .padding(.bottom, 5)
           
           Text("Appella")
             .font(.largeTitle)
