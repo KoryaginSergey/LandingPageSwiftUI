@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-struct ForgotPasswordPage: View {
-  
-  @State var showingSignInPage: Bool = false
+struct WelcomeToAppPage: View {
   
   @Environment(\.presentationMode) var presentationMode
   
@@ -17,16 +15,20 @@ struct ForgotPasswordPage: View {
       VStack() {
         Spacer()
           .frame(height: 80)
-        Text("Forgot password?")
+        Text("Welcome\nto\nAPPELLA")
           .font(.largeTitle)
           .fontWeight(.heavy)
+          .multilineTextAlignment(.center)
         Spacer()
           .frame(height: 50)
-        TextInputPage()
+        Text("Your username")
+          .fontWeight(.medium)
         Spacer()
           .frame(height: 50)
-        Button("Continue") {
-//          showingSignInPage = true
+        Text("hi")
+        Spacer()
+          .frame(height: 50)
+        Button("Log out") {
           presentationMode.wrappedValue.dismiss()
         }
         .frame(height: 55)
@@ -36,9 +38,6 @@ struct ForgotPasswordPage: View {
         .font(.body)
         .cornerRadius(10.0)
         .padding(.all)
-//        .sheet(isPresented: $showingSignInPage, content: {
-//          SignInPage()
-//        })
         Spacer()
         Image("Slice 1")
           .resizable()
@@ -48,8 +47,8 @@ struct ForgotPasswordPage: View {
     }
 }
 
-struct ForgotPasswordPage_Previews: PreviewProvider {
+struct WelcomeToAppPage_Previews: PreviewProvider {
     static var previews: some View {
-        ForgotPasswordPage()
+      WelcomeToAppPage()
     }
 }

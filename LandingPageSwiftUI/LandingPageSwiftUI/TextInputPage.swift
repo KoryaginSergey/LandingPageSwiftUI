@@ -13,10 +13,13 @@ struct TextInputPage: View {
         Text("USERNAME")
           .font(.caption2)
           .fontWeight(.medium)
+          .foregroundColor(Color("myBlueColor"))
           
+
+                    
         HStack {
           Image("user")
-            .colorMultiply(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .colorMultiply(Color("myBlueColor"))
           TextField("your username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
             .colorMultiply(.black)
             .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 10))

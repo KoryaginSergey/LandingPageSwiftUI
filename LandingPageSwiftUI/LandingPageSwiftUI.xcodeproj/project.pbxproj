@@ -10,6 +10,7 @@
 		633E47A226E629EB000B602B /* SignInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E47A126E629EB000B602B /* SignInPage.swift */; };
 		633E47A726E62A51000B602B /* TextInputPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E47A626E62A51000B602B /* TextInputPage.swift */; };
 		633EEF0826E771AD004CA04C /* ForgotPasswordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633EEF0726E771AD004CA04C /* ForgotPasswordPage.swift */; };
+		634F9E5026E8FB3300CC0D61 /* WelcomeToAppPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F9E4F26E8FB3300CC0D61 /* WelcomeToAppPage.swift */; };
 		6364242026E25F5800406279 /* LandingPageSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */; };
 		6364242226E25F5800406279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364242126E25F5800406279 /* ContentView.swift */; };
 		6364242426E25F5A00406279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364242326E25F5A00406279 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		633E47A126E629EB000B602B /* SignInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPage.swift; sourceTree = "<group>"; };
 		633E47A626E62A51000B602B /* TextInputPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputPage.swift; sourceTree = "<group>"; };
 		633EEF0726E771AD004CA04C /* ForgotPasswordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPage.swift; sourceTree = "<group>"; };
+		634F9E4F26E8FB3300CC0D61 /* WelcomeToAppPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeToAppPage.swift; sourceTree = "<group>"; };
 		6364241C26E25F5800406279 /* LandingPageSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandingPageSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageSwiftUIApp.swift; sourceTree = "<group>"; };
 		6364242126E25F5800406279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 1; };
@@ -53,6 +55,21 @@
 			path = "Turtle Rock";
 			sourceTree = "<group>";
 		};
+		634F9E2E26E8B20600CC0D61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		634F9E2F26E8B23900CC0D61 /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				634F9E2E26E8B20600CC0D61 /* Resources */,
+			);
+			path = CommonFiles;
+			sourceTree = "<group>";
+		};
 		6364241326E25F5800406279 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +94,8 @@
 				633E47A126E629EB000B602B /* SignInPage.swift */,
 				633E47A626E62A51000B602B /* TextInputPage.swift */,
 				633EEF0726E771AD004CA04C /* ForgotPasswordPage.swift */,
+				634F9E4F26E8FB3300CC0D61 /* WelcomeToAppPage.swift */,
+				634F9E2F26E8B23900CC0D61 /* CommonFiles */,
 				6364242326E25F5A00406279 /* Assets.xcassets */,
 				6364242826E25F5A00406279 /* Info.plist */,
 				6364242526E25F5A00406279 /* Preview Content */,
@@ -165,6 +184,7 @@
 				6364242226E25F5800406279 /* ContentView.swift in Sources */,
 				843D4B0426E4B737006ECDBA /* MapView.swift in Sources */,
 				633EEF0826E771AD004CA04C /* ForgotPasswordPage.swift in Sources */,
+				634F9E5026E8FB3300CC0D61 /* WelcomeToAppPage.swift in Sources */,
 				6364242026E25F5800406279 /* LandingPageSwiftUIApp.swift in Sources */,
 				843D4B0026E4B08B006ECDBA /* CircleImage.swift in Sources */,
 				633E47A226E629EB000B602B /* SignInPage.swift in Sources */,

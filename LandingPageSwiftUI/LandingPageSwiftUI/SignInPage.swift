@@ -6,8 +6,15 @@
 //
 
 import SwiftUI
+import Foundation
+import UIKit
+
 
 struct SignInPage: View {
+  
+  @State var showingForgotPassword: Bool = false
+  @State var showingWelcomeToApp: Bool = false
+  
     var body: some View {
       VStack() {
         Spacer()
@@ -24,6 +31,7 @@ struct SignInPage: View {
         Text("Let's get started.")
           .font(.largeTitle)
           .fontWeight(.heavy)
+          .foregroundColor(Color("myBlueColor"))
         Text("Make the school app\nyour personal assistant")
           .font(.title3)
           .fontWeight(.thin)
@@ -36,18 +44,28 @@ struct SignInPage: View {
           HStack {
             Spacer()
             Button("Forgot your password?") {
-            }.padding(.trailing, 20)
+              showingForgotPassword = true
+            }
+            .padding(.trailing, 20)
+            .accentColor(Color("myBlueColor"))
+            .sheet(isPresented: $showingForgotPassword, content: {
+              ForgotPasswordPage()
+            })
           }
           Spacer()
           Button("Sign in") {
-            
-          }.frame(height: 55)
+            showingWelcomeToApp = true
+          }
+          .frame(height: 55)
           .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
           .accentColor(.white)
-          .background(Color(.blue))
+          .background(Color("myBlueColor"))
           .font(.body)
           .cornerRadius(10.0)
           .padding(.all)
+          .fullScreenCover(isPresented: $showingWelcomeToApp, content: {
+            WelcomeToAppPage()
+          })
           Text("or scan QR code")
             .font(.body)
         }
@@ -55,7 +73,11 @@ struct SignInPage: View {
         Image("Slice 1")
           .resizable()
           .frame(height: 110)
-      }.ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
+      }
+      .ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
+//      .sheet(isPresented: $showingForgotPassword, content: {
+//        ForgotPasswordPage()
+//      })
     }
 }
 
