@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		633E47A226E629EB000B602B /* SignInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E47A126E629EB000B602B /* SignInPage.swift */; };
 		633E47A726E62A51000B602B /* TextInputPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E47A626E62A51000B602B /* TextInputPage.swift */; };
+		633EDFE326EB4FBD007F83A3 /* ModelTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633EDFE226EB4FBD007F83A3 /* ModelTextInput.swift */; };
 		633EEF0826E771AD004CA04C /* ForgotPasswordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633EEF0726E771AD004CA04C /* ForgotPasswordPage.swift */; };
 		634F9E5026E8FB3300CC0D61 /* WelcomeToAppPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F9E4F26E8FB3300CC0D61 /* WelcomeToAppPage.swift */; };
 		6364242026E25F5800406279 /* LandingPageSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		633E47A126E629EB000B602B /* SignInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPage.swift; sourceTree = "<group>"; };
 		633E47A626E62A51000B602B /* TextInputPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputPage.swift; sourceTree = "<group>"; };
+		633EDFE226EB4FBD007F83A3 /* ModelTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTextInput.swift; sourceTree = "<group>"; };
 		633EEF0726E771AD004CA04C /* ForgotPasswordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPage.swift; sourceTree = "<group>"; };
 		634F9E4F26E8FB3300CC0D61 /* WelcomeToAppPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeToAppPage.swift; sourceTree = "<group>"; };
 		6364241C26E25F5800406279 /* LandingPageSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandingPageSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				6364241F26E25F5800406279 /* LandingPageSwiftUIApp.swift */,
 				633E47A126E629EB000B602B /* SignInPage.swift */,
 				633E47A626E62A51000B602B /* TextInputPage.swift */,
+				633EDFE226EB4FBD007F83A3 /* ModelTextInput.swift */,
 				633EEF0726E771AD004CA04C /* ForgotPasswordPage.swift */,
 				634F9E4F26E8FB3300CC0D61 /* WelcomeToAppPage.swift */,
 				634F9E2F26E8B23900CC0D61 /* CommonFiles */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				633E47A726E62A51000B602B /* TextInputPage.swift in Sources */,
+				633EDFE326EB4FBD007F83A3 /* ModelTextInput.swift in Sources */,
 				6364242226E25F5800406279 /* ContentView.swift in Sources */,
 				843D4B0426E4B737006ECDBA /* MapView.swift in Sources */,
 				633EEF0826E771AD004CA04C /* ForgotPasswordPage.swift in Sources */,

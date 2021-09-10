@@ -38,8 +38,8 @@ struct SignInPage: View {
           .multilineTextAlignment(.center)
           .lineLimit(2)
           .padding(.all)
-        TextInputPage()
-        TextInputPage()
+        TextInputPage(modelUsername: ModelTextInput(title: "USERNAME", leftImage: "user", textPlaceholder: "enter your username"))
+        TextInputPage(modelUsername: ModelTextInput(title: "PASSWORD", leftImage: "lock", rightImage: "eye", textPlaceholder: "enter your password"))
         Group {
           HStack {
             Spacer()
@@ -75,9 +75,7 @@ struct SignInPage: View {
           .frame(height: 110)
       }
       .ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
-//      .sheet(isPresented: $showingForgotPassword, content: {
-//        ForgotPasswordPage()
-//      })
+
     }
 }
 

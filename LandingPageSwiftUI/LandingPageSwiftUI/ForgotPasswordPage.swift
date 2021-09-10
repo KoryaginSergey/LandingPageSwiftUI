@@ -22,11 +22,10 @@ struct ForgotPasswordPage: View {
           .fontWeight(.heavy)
         Spacer()
           .frame(height: 50)
-        TextInputPage()
+        TextInputPage(modelUsername: ModelTextInput(title: "email", leftImage: "mail", textPlaceholder: "enter your email"))
         Spacer()
           .frame(height: 50)
         Button("Continue") {
-//          showingSignInPage = true
           presentationMode.wrappedValue.dismiss()
         }
         .frame(height: 55)
@@ -36,9 +35,6 @@ struct ForgotPasswordPage: View {
         .font(.body)
         .cornerRadius(10.0)
         .padding(.all)
-//        .sheet(isPresented: $showingSignInPage, content: {
-//          SignInPage()
-//        })
         Spacer()
         Image("Slice 1")
           .resizable()
