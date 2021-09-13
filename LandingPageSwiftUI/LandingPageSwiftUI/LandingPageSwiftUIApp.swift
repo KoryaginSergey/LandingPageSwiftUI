@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct LandingPageSwiftUIApp: App {
+  
+  @State static var textMail: String = ""
+  @State static var textPassword: String = ""
+  
     var body: some Scene {
         WindowGroup {
-          SignInPage()
+          SignInPage(textMail: LandingPageSwiftUIApp.$textMail, textPassword: LandingPageSwiftUIApp.$textPassword)
 //          ForgotPasswordPage()
         }
     }

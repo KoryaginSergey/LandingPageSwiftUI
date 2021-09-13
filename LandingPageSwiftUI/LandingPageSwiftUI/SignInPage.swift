@@ -12,8 +12,12 @@ import UIKit
 
 struct SignInPage: View {
   
-  @State var showingForgotPassword: Bool = false
-  @State var showingWelcomeToApp: Bool = false
+  @Binding var textMail: String
+  @Binding var textPassword: String
+  
+  @State private var showingForgotPassword = false
+  @State private var showingWelcomeToApp = false
+  @State private var alertShown = false
   
     var body: some View {
       VStack() {
@@ -38,21 +42,23 @@ struct SignInPage: View {
           .multilineTextAlignment(.center)
           .lineLimit(2)
           .padding(.all)
-        TextInputPage(modelUsername: ModelTextInput(title: "USERNAME", leftImage: "user", textPlaceholder: "enter your username"))
-        TextInputPage(modelUsername: ModelTextInput(title: "PASSWORD", leftImage: "lock", rightImage: "eye", textPlaceholder: "enter your password"))
+          .fixedSize(horizontal: true, vertical: true)
+        TextInputPage(modelUsername: ModelTextInput(title: "USERNAME", leftImage: "user", textPlaceholder: "enter your username"), text: $textMail)
+        TextInputPage(modelUsername: ModelTextInput(title: "PASSWORD", leftImage: "lock", rightImage: "eye", textPlaceholder: "enter your password"), text: $textPassword)
         Group {
           HStack {
             Spacer()
             Button("Forgot your password?") {
               showingForgotPassword = true
+              print($textMail)
             }
             .padding(.trailing, 20)
             .accentColor(Color("myBlueColor"))
-            .sheet(isPresented: $showingForgotPassword, content: {
-              ForgotPasswordPage()
-            })
+//            .sheet(isPresented: $showingForgotPassword, content: {
+//              ForgotPasswordPage(textMail: $textMail)
+//            })
           }
-          Spacer()
+        
           Button("Sign in") {
             showingWelcomeToApp = true
           }
@@ -66,8 +72,22 @@ struct SignInPage: View {
           .fullScreenCover(isPresented: $showingWelcomeToApp, content: {
             WelcomeToAppPage()
           })
-          Text("or scan QR code")
-            .font(.body)
+        
+          HStack(spacing: 0) {
+            Text("or ")
+              .foregroundColor(.black)
+              .font(.system(size: 14))
+            Text("scan QR code")
+              .font(.system(size: 14))
+              .foregroundColor(Color("myBlueColor"))
+              .onTapGesture {
+                alertShown = true
+              }
+              .alert(isPresented: $alertShown) { () -> Alert in
+                Alert(title: Text("Good!"), message: Text("Your QR code has been scanned"), dismissButton: .default(Text("Ok")))
+            }
+          }
+          .padding()
         }
         Spacer()
         Image("Slice 1")
@@ -80,8 +100,12 @@ struct SignInPage: View {
 }
 
 struct SignInPage_Previews: PreviewProvider {
+  
+  @State static var textMail: String = ""
+  @State static var textPassword: String = ""
+  
     static var previews: some View {
-      SignInPage()
+      SignInPage(textMail: $textMail, textPassword: $textPassword)
         
     }
 }

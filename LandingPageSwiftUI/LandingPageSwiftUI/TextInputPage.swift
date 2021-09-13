@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TextInputPage: View {
   
-  let modelUsername: ModelTextInput
-  @State var text: String = ""
+  @State var modelUsername: ModelTextInput
+  @Binding var text: String
   @State var eyeIsEnable = true
   
     var body: some View {
@@ -33,21 +33,25 @@ struct TextInputPage: View {
               .colorMultiply(.black)
               .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 10))
           }
+                    
           Image(eyeIsEnable ? (modelUsername.rightImage ?? "default") : "eye-slash")
             .colorMultiply(.gray)
-            .onTapGesture(count: 1, perform: {
+            .onTapGesture(count: 1, perform: { 
               self.eyeIsEnable.toggle()
             })
         }
+        
         Divider()
-//          .background(Color.red)
+        
       } .padding(.init(top: 10, leading: 20, bottom: 10, trailing: 20))
     }
 }
 
 struct TextInputPage_Previews: PreviewProvider {
+  @State static var text = ""
+  
     static var previews: some View {
-      TextInputPage(modelUsername: ModelTextInput(title: "USERNAME", leftImage: "user", rightImage: "eye", textPlaceholder: "your username"))
       
+      TextInputPage(modelUsername: ModelTextInput(title: "USERNAME", leftImage: "user", rightImage: "eye", textPlaceholder: "your username"), text: $text)
     }
 }
