@@ -14,5 +14,4 @@ struct ModelTextInput {
   let leftImage: String
   var rightImage: String? = nil
   let textPlaceholder: String
-//  @Binding var text: String?
 }

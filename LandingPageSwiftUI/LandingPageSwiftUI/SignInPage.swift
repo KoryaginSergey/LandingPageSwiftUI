@@ -54,9 +54,9 @@ struct SignInPage: View {
             }
             .padding(.trailing, 20)
             .accentColor(Color("myBlueColor"))
-//            .sheet(isPresented: $showingForgotPassword, content: {
-//              ForgotPasswordPage(textMail: $textMail)
-//            })
+            .sheet(isPresented: $showingForgotPassword, content: {
+              ForgotPasswordPage(textMail: $textMail)
+            })
           }
         
           Button("Sign in") {
@@ -99,6 +99,7 @@ struct SignInPage: View {
     }
 }
 
+
 struct SignInPage_Previews: PreviewProvider {
   
   @State static var textMail: String = ""
@@ -109,3 +110,4 @@ struct SignInPage_Previews: PreviewProvider {
         
     }
 }
+

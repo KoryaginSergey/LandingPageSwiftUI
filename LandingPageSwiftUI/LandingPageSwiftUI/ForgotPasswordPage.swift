@@ -43,7 +43,8 @@ struct ForgotPasswordPage: View {
         }
         .ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
         
-        Button(action: {presentationMode.wrappedValue.dismiss()
+        Button(action: {
+          presentationMode.wrappedValue.dismiss()
         }) {
           Image(systemName: "xmark.circle")
         }
